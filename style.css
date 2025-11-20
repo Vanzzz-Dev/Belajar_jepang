@@ -110,75 +110,72 @@ body.dark .sidebar .toggle {
 }
 
 /* ===== TOP NAVBAR ===== */
-.top-navbar {
-    width: 100%;
-    background: #f0f0f0;
-    border-bottom: 1px solid #d4d4d4;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+nav {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: var(--sidebar-color);
 }
 
-.nav-left {
+.nav1 .img1 {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: var(--text-color);
 }
 
-.nav-logo {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+
+.nav1 .img1 img {
+    width: 12%;
 }
 
-.nav-title {
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.nav-menu {
+.navbar1 {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
+    align-items: center;
 }
 
-.nav-menu li a {
-    position: relative;
+.navbar1 li a {
     text-decoration: none;
-    color: #000;
+    color: var(--text-color);
     font-size: 18px;
+    font-weight: 500;
+    transition: var(--tran-04);
+
 }
 
-.nav-menu li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -3px;
-    width: 0;
-    height: 2px;
-    background: #D72323;
-    transition: 0.3s ease;
+.navbar1 li a:hover {
+    color: var(--primary-color);
 }
 
-.nav-menu li a:hover::after {
-    width: 100%;
+#menu-icon {
+    font-size: 36px;
+    color: #333;
+    display: none;
 }
 
-.active {
-    border-bottom: 2px solid #D72323;
+.navbar1 .mode {
+    color: var(--text-color);
+}
+
+.navbar1 .mode .moon-sun span {
+    display: none;
 }
 
 /* ==== Sidebar ==== */
 .sidebar {
     position: fixed;
-    top: 60px;
+    top: 80px;
     left: 0;
-    height: calc(100% - 60px);
+    height: calc(100% - 80px);
     width: 250px;
     background-color: var(--sidebar-color);
     transition: var(--tran-05);
@@ -284,73 +281,6 @@ body.dark li a:hover .text {
     justify-content: space-between;
 }
 
-.menu-bar .mode {
-    background-color: var(--primary-color-light);
-    position: relative;
-    background-color: var(--primary-color-light);
-}
-
-.menu-bar .mode .moon-sun {
-    height: 50px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-}
-
-.menu-bar .mode i {
-    position: absolute;
-}
-
-.menu-bar .mode i.sun {
-    opacity: 0;
-}
-
-body.dark .menu-bar .mode i.sun {
-    opacity: 1;
-}
-
-body.dark .menu-bar .mode i.moon {
-    opacity: 0;
-}
-
-.menu-bar .mode .toggle-switch {
-    right: 0;
-    position: absolute;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 60px;
-    border-radius: 6px;
-    cursor: pointer;
-    background-color: var(--primary-color-light);
-}
-
-.toggle-switch .switch {
-    position: relative;
-    height: 22px;
-    width: 44px;
-    border-radius: 25px;
-    background-color: var(--toggle-color);
-}
-
-.switch::before {
-    content: '';
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    top: 50%;
-    left: 5px;
-    transform: translateY(-50%);
-    background: var(--sidebar-color);
-    transition: var(--tran-03);
-}
-
-body.dark .switch::before {
-    left: 20px;
-}
-
 /* ==== Hero section ==== */
 .container {
     margin-left: 250px;
@@ -409,7 +339,7 @@ body.dark .container {
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.btn a{
+.btn a {
     text-decoration: none;
 }
 
@@ -578,6 +508,7 @@ table td span {
     text-align: center;
 }
 
+
 /* ==== footer ==== */
 
 .footer-container {
@@ -588,7 +519,6 @@ table td span {
 }
 
 .footer-container .logo {
-    height: 20rem;
     display: flex;
     align-items: center;
     font-size: x-large;
@@ -623,12 +553,264 @@ body.dark footer .tag {
 }
 
 .huruf-jepang {
-   margin-left: 11rem;
-   margin-top: 2rem;
-   margin-bottom: 2rem;
+    margin-left: 11rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .huruf-jepang,
 .romaji {
     list-style: none;
+}
+
+/* ==== Tablet ==== */
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .sidebar {
+        width: 190px;
+    }
+
+    .sidebar.close {
+        width: 70px;
+    }
+
+    .sidebar li .icon {
+        font-size: 18px;
+        min-width: 50px;
+    }
+
+    .sidebar .text {
+        font-size: 14px;
+    }
+
+    .sidebar .toggle {
+        right: -22px;
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
+    }
+
+    .menu-bar .mode .moon-sun {
+        width: 50px;
+    }
+
+    .toggle-switch .switch {
+        height: 20px;
+        width: 40px;
+    }
+
+    .switch::before {
+        height: 13px;
+        width: 13px;
+        left: 4px;
+    }
+
+    .sidebar~.container {
+        margin-left: 200px;
+        transition: var(--tran-05);
+    }
+
+    .sidebar.close~.container {
+        margin-left: 70px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 50px 0;
+        gap: 40px;
+        margin-top: 3rem;
+    }
+
+    .container .text {
+        width: 90%;
+        font-size: 20px;
+        gap: 40px;
+    }
+
+    .container .text .header {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .descrip {
+        font-size: 17px;
+    }
+
+    /* ===== BUTTON ===== */
+    .btn button {
+        width: 260px;
+        font-size: 22px;
+        padding: 15px;
+        gap: 15px;
+        margin-left: 10rem;
+    }
+
+    .btn button .icon {
+        font-size: 2.2rem;
+    }
+
+    .img-wrapper {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pulau_black,
+    .pulau_with {
+        width: 100%;
+    }
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .nav-logo {
+        width: 45px;
+    }
+
+    .nav-title {
+        font-size: 22px;
+    }
+
+    .huruf-wrapper {
+        width: 80%;
+        overflow-x: auto;
+        display: flex;
+        margin-left: 4rem;
+    }
+
+    .huruf-wrapper table {
+        width: 100%;
+        max-width: 900px;
+        border-collapse: collapse;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .kosakata {
+        padding-left: 1rem;
+
+    }
+}
+
+@media (max-width: 576px) {
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 30px;
+    }
+
+    .nav1 .img1 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .nav1 .img1 img {
+        width: 19%;
+    }
+
+    .img1 h1 {
+        font-size: 18px;
+    }
+
+    .navbar1 .mode .moon-sun{
+        display: flex;
+        gap: 20px;
+    }
+    .navbar1 .mode .moon-sun span {
+        display: block;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: auto;
+        padding: 50px 0;
+        gap: 40px;
+        margin-top: 3rem;
+    }
+
+    .btn button {
+        width: 260px;
+        font-size: 22px;
+        padding: 15px;
+        gap: 15px;
+        margin-left: 3rem;
+    }
+
+    .btn button .icon {
+        font-size: 2.2rem;
+    }
+
+    .container .text {
+        width: 90%;
+        font-size: 20px;
+        gap: 40px;
+    }
+
+    .container .text .header {
+        font-size: 32px;
+        line-height: 1.3;
+    }
+
+    .descrip {
+        font-size: 13px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+        color: var(--primary-color);
+    }
+
+    .navbar1 {
+        position: fixed;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        display: block;
+        padding: 0.5rem 4%;
+        background-color: var(--sidebar-color);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid #000000;
+        display: none;
+    }
+
+    .navbar1.active {
+        display: block;
+    }
+
+    .navbar1 li {
+        margin: 1.5rem 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .huruf-jepang, .materi{
+        margin-left: 1rem;
+    } 
+
 }
