@@ -25,6 +25,10 @@ modeSwtich.addEventListener("click", () => {
   }
 });
 
+document.getElementById("btnMulai").addEventListener("click", function () {
+  window.location.href = "belajar.html";
+});
+
 menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle("bx-x");
   navbar.classList.toggle("active");
