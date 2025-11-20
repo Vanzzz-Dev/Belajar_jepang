@@ -26,13 +26,6 @@ modeSwtich.addEventListener("click", () => {
 });
 
 
-window.addEventListener("load", function () {
-  setTimeout(() => {
-    document.getElementById("loading").style.display = "none";
-    document.getElementById("appearance").style.display = "block";
-  }, 3000);
-});
-
 document.getElementById("btnMulai").addEventListener("click", function () {
   window.location.href = "belajar.html";
 });
