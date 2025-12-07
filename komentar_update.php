@@ -7,17 +7,17 @@ if (isset($_GET['id'])) {
     $row = mysqli_fetch_assoc($result);
 }
 
-if(isset($_POST['kirim'])){
+if (isset($_POST['kirim'])) {
     $id = $_GET['id'];
     $nama = $_POST['nama'];
     $komentar = $_POST['komentar'];
 
-$update = "UPDATE ulasan SET 
+    $update = "UPDATE ulasan SET 
             nama = '$nama', 
             komentar = '$komentar' 
             WHERE id = '$id'";
 
- mysqli_query($koneksi,$update);
+    mysqli_query($koneksi, $update);
     header("Location: index.php");
     exit;
 }
@@ -30,6 +30,7 @@ $update = "UPDATE ulasan SET
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Komentar</title>
+    <link rel="shortcut icon" href="pic/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 

@@ -1,7 +1,7 @@
-<?php 
+<?php
 include 'koneksi/koneksi.php';
 
-if(isset($_POST['kirim'])){
+if (isset($_POST['kirim'])) {
     $nama = $_POST['nama'];
     $komentar = $_POST['komentar'];
 
@@ -14,12 +14,15 @@ if(isset($_POST['kirim'])){
 
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Komentar</title>
+    <link rel="shortcut icon" href="pic/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="form-container">
         <div class="form-box shadow">
@@ -32,4 +35,5 @@ if(isset($_POST['kirim'])){
         </div>
     </div>
 </body>
+
 </html>

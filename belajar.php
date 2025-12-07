@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BenkyouRoom</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="pic/favicon.png" type="image/x-icon">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
@@ -16,7 +16,7 @@
   <div id="appearance">
     <nav class="nav1">
       <div class="img1">
-        <img src="picture/logo.png" alt="icon">
+        <img src="pic/logo.png" alt="icon">
         <h1>BenkyouRoom</h1>
       </div>
 
@@ -73,8 +73,8 @@
       </div>
 
       <div class="img-wrapper">
-        <img class="pulau_black" src="picture/pulau_black.png" width="100%" />
-        <img class="pulau_with" src="picture/pulau_with.png " width="110%" />
+        <img class="pulau_black" src="pic/pulau_black.png" width="100%" />
+        <img class="pulau_with" src="pic/pulau_with.png " width="110%" />
       </div>
     </div>
 
