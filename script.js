@@ -15,11 +15,9 @@ modeSwtich.addEventListener("click", () => {
   body.classList.toggle("dark");
 
   if (body.classList.contains("dark")) {
-    modeText.innerText = "Light Mode";
     icon.classList.remove("bx-moon");
     icon.classList.add("bx-sun");
   } else {
-    modeText.innerText = "Dark Mode";
     icon.classList.remove("bx-sun");
     icon.classList.add("bx-moon");
   }
