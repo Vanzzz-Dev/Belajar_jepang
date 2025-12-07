@@ -97,6 +97,10 @@ nav {
     display: none;
 }
 
+#mode{
+    color: var(--text-color);
+}
+
 .toggle-mode{
     font-size: 30px;
 }
