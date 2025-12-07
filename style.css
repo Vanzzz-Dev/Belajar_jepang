@@ -97,12 +97,8 @@ nav {
     display: none;
 }
 
-.navbar1 .mode {
-    color: var(--text-color);
-}
-
-.navbar1 .mode .moon-sun span {
-    display: none;
+.toggle-mode{
+    font-size: 30px;
 }
 
 /* ==== Sidebar ==== */
@@ -527,10 +523,6 @@ body.dark footer .tag {
         font-size: 18px;
     }
 
-    .menu-bar .mode .moon-sun {
-        width: 50px;
-    }
-
     .toggle-switch .switch {
         height: 20px;
         width: 40px;
@@ -739,6 +731,19 @@ body.dark footer .tag {
         margin: 1.5rem 0;
     }
 
+    .mode{
+        background-color: var(--primary-color);
+        padding: 12px;
+        border-radius: 10px;
+    }
+
+    #mode{
+        color: var(--text-color);
+       display: block;
+       margin: 0 auto;
+    }
+
+    
     .footer-container {
         flex-direction: column;
         text-align: center;
