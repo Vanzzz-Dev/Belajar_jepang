@@ -444,7 +444,92 @@ table td span {
     text-align: center;
 }
 
+/* ==== Komentar ==== */
+.komentar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
 
+.box-komentar{
+    margin-top: 18px;
+    max-width: 55rem;
+    background-color: var(--body-color);
+    padding: 15px;
+    border-radius: 5px;
+}
+ .box-container .btn-komentar{
+    margin-top: 12px;
+    background-color: #D72323;
+    padding: 15px;
+    width: 110px;
+    border-radius: 10px;
+}
+
+ .box-container .btn-komentar a{
+   text-decoration: none;
+   font-size: 19px;
+   color: #fff;
+}
+
+.shadow{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.aksi {
+    margin-top: 10px;
+}
+
+.aksi a{
+    padding-left: 10px;
+    color: var(--primary-color);
+}
+
+/* ==== form ==== */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.form-box {
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-box input,
+.form-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
 /* ==== footer ==== */
 
 .footer-container {

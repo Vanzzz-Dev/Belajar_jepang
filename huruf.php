@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BenkyouRoom</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <div id="appearance">
+    <nav class="nav1">
+      <div class="img1">
+        <img src="picture/logo.png" alt="icon">
+        <h1>BenkyouRoom</h1>
+      </div>
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <ul class="navbar1">
+        <li><a href="index.php">Beranda</a></li>
+        <li><a href="#">Huruf</a></li>
+        <li><a href="belajar.php">Belajar</a></li>
+        <li>
+          <div class="bottom-content">
+        <li class="mode">
+          <div class="moon-sun">
+            <i class="bx bx-moon icon moon icon-mode toggle-mode" id="mode"></i>
+          </div>
+        </li>
+  </div>
+  </li>
+  </ul>
+
+  </nav>
+
+  <!-- Sidebar -->
+  <div class="sidebar close">
+    <i class="bx bx-chevron-right toggle"></i>
+
+    <div class="menu-bar">
+      <div class="menu">
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="#hiragana">
+              <i class="bx icon">あ</i>
+              <span class="text nav-text">Hiragana</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#katakana">
+              <i class="bx icon">カ</i>
+              <span class="text nav-text">Katakana</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#kanji">
+              <i class="bx icon">日</i>
+              <span class="text nav-text">Kanji</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="hero-section" id="beranda">
+      <div class="text">
+        <h1 class="header">Mari belajar <span class="red">Huruf</span> Jepang</h1>
+        <p class="descrip">
+          Pelajari huruf dasar bahasa Jepang – Hiragana, Katakana, dan Kanji.
+          Mulai dari pengenalan karakter, cara penulisan, hingga latihan membaca dan menulis.
+          Semua materi tersedia gratis untuk Anda.
+        </p>
+
+        <div class="btn">
+          <a href="#hiragana">
+            <button>Belajar huruf <span class="icon">あ</span></button>
+          </a>
+        </div>
+      </div>
+
+      <div class="img-wrapper">
+        <img class="pulau_black" src="picture/pulau_black.png" width="100%" />
+        <img class="pulau_with" src="picture/pulau_with.png " width="110%" />
+      </div>
+    </div>
+
+    <!-- HIRAGANA -->
+    <div class="huruf jarak">
+      <div class="huruf-container" id="hiragana">
+        <h1 class="title">Huruf <span class="red">Hiragana</span></h1>
+
+        <div class="huruf-wrapper">
+          <table>
+            <tr>
+              <td>あ <span>a</span></td>
+              <td>か <span>ka</span></td>
+              <td>さ <span>sa</span></td>
+              <td>た <span>ta</span></td>
+              <td>な <span>na</span></td>
+              <td>は <span>ha</span></td>
+              <td>ま <span>ma</span></td>
+              <td>や <span>ya</span></td>
+              <td>ら <span>ra</span></td>
+              <td>わ <span>wa</span></td>
+            </tr>
+
+            <tr>
+              <td>い <span>i</span></td>
+              <td>き <span>ki</span></td>
+              <td>し <span>shi</span></td>
+              <td>ち <span>chi</span></td>
+              <td>に <span>ni</span></td>
+              <td>ひ <span>hi</span></td>
+              <td>み <span>mi</span></td>
+              <td></td>
+              <td>り <span>ri</span></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>う <span>u</span></td>
+              <td>く <span>ku</span></td>
+              <td>す <span>su</span></td>
+              <td>つ <span>tsu</span></td>
+              <td>ぬ <span>nu</span></td>
+              <td>ふ <span>fu</span></td>
+              <td>む <span>mu</span></td>
+              <td>ゆ <span>yu</span></td>
+              <td>る <span>ru</span></td>
+              <td>ん <span>n</span></td>
+            </tr>
+
+            <tr>
+              <td>え <span>e</span></td>
+              <td>け <span>ke</span></td>
+              <td>せ <span>se</span></td>
+              <td>て <span>te</span></td>
+              <td>ね <span>ne</span></td>
+              <td>へ <span>he</span></td>
+              <td>め <span>me</span></td>
+              <td></td>
+              <td>れ <span>re</span></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>お <span>o</span></td>
+              <td>こ <span>ko</span></td>
+              <td>そ <span>so</span></td>
+              <td>と <span>to</span></td>
+              <td>の <span>no</span></td>
+              <td>ほ <span>ho</span></td>
+              <td>も <span>mo</span></td>
+              <td>よ <span>yo</span></td>
+              <td>ろ <span>ro</span></td>
+              <td>を <span>wo / o</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- KATAKANA -->
+      <div class="huruf-container" id="katakana">
+        <h1 class="title">Huruf <span class="red">Katakana</span></h1>
+
+        <div class="huruf-wrapper">
+          <table>
+            <tr>
+              <td>ア <span>a</span></td>
+              <td>カ <span>ka</span></td>
+              <td>サ <span>sa</span></td>
+              <td>タ <span>ta</span></td>
+              <td>ナ <span>na</span></td>
+              <td>ハ <span>ha</span></td>
+              <td>マ <span>ma</span></td>
+              <td>ヤ <span>ya</span></td>
+              <td>ラ <span>ra</span></td>
+              <td>ワ <span>wa</span></td>
+            </tr>
+
+            <tr>
+              <td>イ <span>i</span></td>
+              <td>キ <span>ki</span></td>
+              <td>シ <span>shi</span></td>
+              <td>チ <span>chi</span></td>
+              <td>ニ <span>ni</span></td>
+              <td>ヒ <span>hi</span></td>
+              <td>ミ <span>mi</span></td>
+              <td></td>
+              <td>リ <span>ri</span></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>ウ <span>u</span></td>
+              <td>ク <span>ku</span></td>
+              <td>ス <span>su</span></td>
+              <td>ツ <span>tsu</span></td>
+              <td>ヌ <span>nu</span></td>
+              <td>フ <span>fu</span></td>
+              <td>ム <span>mu</span></td>
+              <td>ユ <span>yu</span></td>
+              <td>ル <span>ru</span></td>
+              <td>ン <span>n</span></td>
+            </tr>
+
+            <tr>
+              <td>エ <span>e</span></td>
+              <td>ケ <span>ke</span></td>
+              <td>セ <span>se</span></td>
+              <td>テ <span>te</span></td>
+              <td>ネ <span>ne</span></td>
+              <td>ヘ <span>he</span></td>
+              <td>メ <span>me</span></td>
+              <td></td>
+              <td>レ <span>re</span></td>
+              <td></td>
+            </tr>
+
+            <tr>
+              <td>オ <span>o</span></td>
+              <td>コ <span>ko</span></td>
+              <td>ソ <span>so</span></td>
+              <td>ト <span>to</span></td>
+              <td>ノ <span>no</span></td>
+              <td>ホ <span>ho</span></td>
+              <td>モ <span>mo</span></td>
+              <td>ヨ <span>yo</span></td>
+              <td>ロ <span>ro</span></td>
+              <td>ヲ <span>wo / o</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <!-- KANJI -->
+      <div class="huruf-container" id="kanji">
+        <h1 class="title">Huruf <span class="red">Kanji</span> Dasar</h1>
+
+        <div class="huruf-wrapper">
+          <table>
+            <tr>
+              <td>日 <span>matahari / hari</span></td>
+              <td>月 <span>bulan</span></td>
+              <td>山 <span>gunung</span></td>
+              <td>川 <span>sungai</span></td>
+              <td>人 <span>orang</span></td>
+              <td>口 <span>mulut</span></td>
+              <td>手 <span>tangan</span></td>
+              <td>目 <span>mata</span></td>
+            </tr>
+
+            <tr>
+              <td>火 <span>api</span></td>
+              <td>水 <span>air</span></td>
+              <td>木 <span>kayu</span></td>
+              <td>金 <span>emas / uang</span></td>
+              <td>土 <span>tanah</span></td>
+              <td>空 <span>langit</span></td>
+              <td>雨 <span>hujan</span></td>
+              <td>田 <span>sawah</span></td>
+            </tr>
+
+            <tr>
+              <td>女 <span>perempuan</span></td>
+              <td>男 <span>laki-laki</span></td>
+              <td>子 <span>anak</span></td>
+              <td>友 <span>teman</span></td>
+              <td>先 <span>sebelum / depan</span></td>
+              <td>生 <span>hidup</span></td>
+              <td>学 <span>belajar</span></td>
+              <td>校 <span>sekolah</span></td>
+            </tr>
+
+            <tr>
+              <td>食 <span>makan</span></td>
+              <td>飲 <span>minum</span></td>
+              <td>行 <span>pergi</span></td>
+              <td>来 <span>datang</span></td>
+              <td>入 <span>masuk</span></td>
+              <td>出 <span>keluar</span></td>
+              <td>大 <span>besar</span></td>
+              <td>小 <span>kecil</span></td>
+            </tr>
+
+            <tr>
+              <td>上 <span>atas</span></td>
+              <td>下 <span>bawah</span></td>
+              <td>右 <span>kanan</span></td>
+              <td>左 <span>kiri</span></td>
+              <td>早 <span>cepat</span></td>
+              <td>名 <span>nama</span></td>
+              <td>白 <span>putih</span></td>
+              <td>黒 <span>hitam</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="container">
+    <div class="footer-container">
+      <div class="logo">
+        <img src="picture/logo.png" alt="Logo" width="18%">
+        <h3>BenkyouRoom</h3>
+      </div>
+      <div class="menu">
+        <h2>Menu</h2>
+        <ul class="jarak">
+          <li>Alur</li>
+          <li>Huruf</li>
+          <li>Kosakata</li>
+          <li>Tata Bahasa</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h2>Contact</h2>
+        <div class="contact-container jarak">
+          <span class="material-symbols-outlined">
+            mail
+          </span>
+          <p>vanooo580@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

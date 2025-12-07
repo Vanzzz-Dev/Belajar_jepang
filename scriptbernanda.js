@@ -24,7 +24,7 @@ modeSwtich.addEventListener("click", () => {
 });
 
 document.getElementById("btnMulai").addEventListener("click", function () {
-  window.location.href = "belajar.html";
+  window.location.href = "belajar.php";
 });
 
 menuIcon.addEventListener("click", () => {
